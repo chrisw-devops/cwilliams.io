@@ -7,7 +7,7 @@ phases:
       - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist
   build:
     commands:
-      - jekyll build
+      - cd src && jekyll build
 artifacts:
   files:
     - '**/*'
