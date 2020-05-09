@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      ruby: 2.7
+    commands:
+      - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist
+  build:
+    commands:
+      - jekyll build
+artifacts:
+  files:
+    - '**/*'
+  base-directory: "src/_site"
