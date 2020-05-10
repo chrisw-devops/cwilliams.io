@@ -2,14 +2,63 @@ body, h1, h2, h3, h4, h5, h6, p {
     font-family: 'Open Sans', sans-serif;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 1rem 0;
 }
 
 h2 {
     font-size: 2.5rem;
     margin: 1rem 0;
+}
+
+.post {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 2vh;
+}
+
+.post-title {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.post-author-tag {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.header-large-title {
+    font-size: 2.5rem;
+    margin: 1rem 0 0.5rem;
+    display: block;
+}
+
+.header-subtitle {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.header-seperator {
+    padding-top: 15vh;
+}
+
+.footer-seperator {
+    padding-bottom: 10vh;
 }
 
 .full-height{
@@ -36,4 +85,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding-top: 0 !important;
 }

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }}</title>
+        {% include stylesheets.html %}
+    </head>
+    <body class="white">
+        {% include blog-header.html %}
+        {% if site.posts.size > 0 %}
+            <div class="header-seperator footer-seperator container">
+                <div class="full-height black-text">
+                    <ul>
+                        {% for post in site.posts %}
+                            <li class="post">
+                                <h5><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h5>
+                                <span class="black-text post-author-tag">By <a href="https://cwilliams.io">Chris Williams</a> on {{ post.date | date_to_string }}</span>
+                                {{ post.excerpt }}
+                                <a href="{{ post.url }}">Read more</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+        {% else %}
+            <div class="container">
+                <div class="valign-wrapper full-height black-text">
+                    <h2>There are no posts :(</h2>
+            {% endif %}
+            </div>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>
