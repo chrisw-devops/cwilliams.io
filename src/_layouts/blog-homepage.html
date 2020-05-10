@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }}</title>
+        {% include stylesheets.html %}
+    </head>
+    <body class="white">
+        {% include blog-header.html %}
+        {% if site.posts.size > 0 %}
+            <div class="header-seperator container">
+                <div class="full-height black-text">
+                    <h2>Read My Thoughts</h2>
+        {% else %}
+            <div class="container">
+                <div class="valign-wrapper full-height black-text">
+                    <h2>There are no posts :(</h2>
+            {% endif %}
+            </div>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>
