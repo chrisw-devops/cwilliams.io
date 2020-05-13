@@ -36,6 +36,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.full-height ul li{
+    list-style-type: circle;
+    margin-left: 2rem;
+}
+
 .post-author-tag {
     font-size: 12px;
     text-transform: uppercase;
