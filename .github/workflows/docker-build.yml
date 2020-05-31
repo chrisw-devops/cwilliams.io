@@ -19,7 +19,10 @@ jobs:
     name: build
     runs-on: ubuntu-latest
     steps:
-      - name: 
+      - name: Check out code
+        uses: actions/checkout@v1.0
+        
+      - name: Build and push Docker tag
         uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
