@@ -3,7 +3,7 @@ services:
   jekyll:
     command: jekyll serve
     container_name: jekyll_cwilliams_io
-    image: jekyll/jekyll:4
+    image: jekyll/jekyll:4.2.0
     ports:
     - 4000:4000
     volumes:
